@@ -27,6 +27,17 @@ public class Main {
 		assertEquals(-1,Day3.maxSubArray(t3));
 		assertEquals(0,Day3.maxSubArray(t4));
 		System.out.println("Day3 - ok");
+
+		//Day4
+		t1 = new int[] {0,1,0,3,12};
+		Day4.moveZeroes(t1);
+		assertEquals(1,t1[0]);
+		assertEquals(3,t1[1]);
+		assertEquals(12,t1[2]);
+		assertEquals(0,t1[3]);
+		assertEquals(0,t1[4]);
+		
+		System.out.println("Day4 - ok");
 		
 		
 		
