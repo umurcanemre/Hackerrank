@@ -35,9 +35,19 @@ public class Main {
 		assertEquals(3,t1[1]);
 		assertEquals(12,t1[2]);
 		assertEquals(0,t1[3]);
-		assertEquals(0,t1[4]);
-		
+		assertEquals(0,t1[4]);		
 		System.out.println("Day4 - ok");
+
+		//Day5
+		t1 = new int[] {7,1,5,3,6,4};
+		t2 = new int[] {1,2,3,4,5};
+		t3 = new int[] {7,6,4,3,1};
+		t4 = new int[] {2,4,1};
+		assertEquals(7,Day5.maxProfit(t1));
+		assertEquals(4,Day5.maxProfit(t2));
+		assertEquals(0,Day5.maxProfit(t3));
+		assertEquals(2,Day5.maxProfit(t4));
+		System.out.println("Day5 - ok");
 		
 		
 		
