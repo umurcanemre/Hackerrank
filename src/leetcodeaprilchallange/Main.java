@@ -1,6 +1,9 @@
 package leetcodeaprilchallange;
 
+import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.util.Arrays;
 
 public class Main {
 
@@ -48,6 +51,16 @@ public class Main {
 		assertEquals(0,Day5.maxProfit(t3));
 		assertEquals(2,Day5.maxProfit(t4));
 		System.out.println("Day5 - ok");
+
+		//Day6
+		String[] s1 = new String[] {"eat", "tea", "tan", "ate", "nat", "bat"};
+		assertEquals(3,Day6.groupAnagrams(s1).get(0).size());
+		assertTrue(Day6.groupAnagrams(s1).get(0).containsAll(Arrays.asList("eat", "tea", "ate")));
+		assertEquals(2,Day6.groupAnagrams(s1).get(1).size());
+		assertTrue(Day6.groupAnagrams(s1).get(1).containsAll(Arrays.asList("nat", "tan")));
+		assertEquals(1,Day6.groupAnagrams(s1).get(2).size());
+		assertTrue(Day6.groupAnagrams(s1).get(2).containsAll(Arrays.asList("bat")));
+		System.out.println("Day6 - ok");
 		
 		
 		
