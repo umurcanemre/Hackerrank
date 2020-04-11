@@ -1,4 +1,4 @@
-package leetcodeaprilchallange;
+package leetcodeaprilchallange.week1;
 
 /**
  * Say you have an array for which the ith element is the price of a given stock
@@ -33,7 +33,7 @@ package leetcodeaprilchallange;
  * 
  */
 
-public class Day5 {
+public class W1D5 {
 	public static int maxProfit(int[] prices) {
 		if(prices == null || prices.length < 2) {
 			return 0;

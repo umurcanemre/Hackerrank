@@ -1,11 +1,11 @@
-package leetcodeaprilchallange;
+package leetcodeaprilchallange.week1;
 
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 
-public class Day2 {
+public class W1D2 {
 	/*
 	 * Write an algorithm to determine if a number is "happy".
 	 * 

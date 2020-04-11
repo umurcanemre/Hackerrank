@@ -1,4 +1,4 @@
-package leetcodeaprilchallange;
+package leetcodeaprilchallange.week1;
 
 /**
  * 
@@ -16,7 +16,7 @@ package leetcodeaprilchallange;
  *
  * 
  */
-public class Day4 {
+public class W1D4 {
 	public static void moveZeroes(final int[] nums) {
 		int encounteredZeros = 0;
 		

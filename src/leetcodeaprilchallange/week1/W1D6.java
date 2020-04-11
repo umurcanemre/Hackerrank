@@ -1,8 +1,7 @@
-package leetcodeaprilchallange;
+package leetcodeaprilchallange.week1;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -23,7 +22,7 @@ import java.util.stream.Collectors;
  * 
  */
 
-public class Day6 {
+public class W1D6 {
 	public static List<List<String>> groupAnagrams(String[] strs) {
 		Map<String, List<String>> anagramMap = new LinkedHashMap<>();		
 		

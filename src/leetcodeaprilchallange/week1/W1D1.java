@@ -1,10 +1,10 @@
-package leetcodeaprilchallange;
+package leetcodeaprilchallange.week1;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
-public class Day1 {
+public class W1D1 {
 	/*
 	 * Given a non-empty array of integers, every element appears twice except for
 	 * one. Find that single one.

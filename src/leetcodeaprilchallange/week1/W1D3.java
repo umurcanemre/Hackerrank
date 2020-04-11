@@ -1,4 +1,4 @@
-package leetcodeaprilchallange;
+package leetcodeaprilchallange.week1;
 
 /**
  * Given an integer array nums, find the contiguous subarray (containing at
@@ -17,7 +17,7 @@ package leetcodeaprilchallange;
  * 
  */
 
-public class Day3 {
+public class W1D3 {
 	public static int maxSubArray(int[] nums) {
 		int result = nums[0];
 		int tempResult = nums[0];
