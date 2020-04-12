@@ -17,6 +17,7 @@ import leetcodeaprilchallange.week2.W2D1.ListNode;
 import leetcodeaprilchallange.week2.W2D2;
 import leetcodeaprilchallange.week2.W2D3.MinStack;
 import leetcodeaprilchallange.week2.W2D4;
+import leetcodeaprilchallange.week2.W2D5;
 
 public class Main {
 
@@ -138,6 +139,13 @@ public class Main {
 		//Day11		
 		W2D4.runTests();
 		System.out.println("Day11 - ok");
+		
+		//Day12	
+		assertEquals(1, W2D5.lastStoneWeight(new int[] {2,7,4,1,8,1}));
+		assertEquals(32, W2D5.lastStoneWeight(new int[] {2,20,4,1,60,1}));
+		assertEquals(3, W2D5.lastStoneWeight(new int[] {3}));
+		assertEquals(3, W2D5.lastStoneWeight(new int[] {3,3,3,3,3}));
+		System.out.println("Day12 - ok");
 		
 		
 		
