@@ -18,6 +18,8 @@ import leetcodeaprilchallange.week2.W2D2;
 import leetcodeaprilchallange.week2.W2D3.MinStack;
 import leetcodeaprilchallange.week2.W2D4;
 import leetcodeaprilchallange.week2.W2D5;
+import leetcodeaprilchallange.week2.W2D6;
+import leetcodeaprilchallange.week2.W2D7;
 
 public class Main {
 
@@ -146,8 +148,31 @@ public class Main {
 		assertEquals(3, W2D5.lastStoneWeight(new int[] {3}));
 		assertEquals(3, W2D5.lastStoneWeight(new int[] {3,3,3,3,3}));
 		System.out.println("Day12 - ok");
-		
-		
+
+		//Day13	
+		assertEquals(2, W2D6.findMaxLength(new int[] {0,1}));
+		assertEquals(2, W2D6.findMaxLength(new int[] {0,1,0}));
+		assertEquals(4, W2D6.findMaxLength(new int[] {0,1,0,1}));
+		assertEquals(4, W2D6.findMaxLength(new int[] {0,1,0,1,0,0}));
+		assertEquals(6, W2D6.findMaxLength(new int[] {0,0,0,1,1,1,0}));
+		assertEquals(4, W2D6.findMaxLength(new int[] {0,1,0,1,1,1,0}));
+		assertEquals(10, W2D6.findMaxLength(new int[] {0,0,0,1,1,1,1,1,0,0}));
+		assertEquals(12, W2D6.findMaxLength(new int[] {0,0,0,1,1,1,1,1,1,0,0,0,0,0,0}));
+		assertEquals(12, W2D6.findMaxLength(new int[] {0,1,0,1,0,0,1,0,1,0,1,0,1}));
+		assertEquals(94, W2D6.findMaxLength(new int[] {1,1,1,1,1,1,1,0,0,0,0,1,1,0,1,0,0,1,1,1,1,1,1,1,1,1,0,0,0,0,1,0,0,0,0,1,0,1,0,0,0,1,1,0,0,0,0,1,0,0,1,1,1,1,1,0,0,1,0,1,1,0,0,0,1,0,0,0,1,1,1,0,1,1,0,1,0,0,1,1,0,1,0,0,1,1,1,0,0,1,0,1,1,1,0,0,1,0,1,1}));
+		System.out.println("Day13 - ok");
+
+		//Day14	
+		assertTrue(W2D7.stringShift("abc", new int[][] {new int[] {0,1},new int[] {1,2}}).contentEquals("cab"));
+		assertTrue(W2D7.stringShift("abcdefg", new int[][] {new int[] {1,1},new int[] {1,1},new int[] {0,2},new int[] {1,3}}).contentEquals("efgabcd"));
+		assertTrue(W2D7.stringShift("wpdhhcj",
+				new int[][] {new int[] {0,7},new int[] {1,7},new int[] {1,0},new int[] {1,3}
+				,new int[] {0,3},new int[] {0,6},new int[] {1,2}}).contentEquals("hcjwpdh"));
+		assertTrue(W2D7.stringShift("xqgwkiqpif",
+				new int[][] {new int[] {1,4},new int[] {0,7},new int[] {0,8},new int[] {0,7}
+				,new int[] {0,6},new int[] {1,3},new int[] {0,1}
+				,new int[] {1,7},new int[] {0,5},new int[] {0,6}}).contentEquals("qpifxqgwki"));
+		System.out.println("Day14 - ok");
 		
 		System.out.println("All - ok");
 	}
