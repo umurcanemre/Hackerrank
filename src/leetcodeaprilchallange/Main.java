@@ -20,6 +20,9 @@ import leetcodeaprilchallange.week2.W2D4;
 import leetcodeaprilchallange.week2.W2D5;
 import leetcodeaprilchallange.week2.W2D6;
 import leetcodeaprilchallange.week2.W2D7;
+import leetcodeaprilchallange.week3.W3D1;
+import leetcodeaprilchallange.week3.W3D2;
+import leetcodeaprilchallange.week3.W3D3;
 
 public class Main {
 
@@ -173,8 +176,57 @@ public class Main {
 				,new int[] {0,6},new int[] {1,3},new int[] {0,1}
 				,new int[] {1,7},new int[] {0,5},new int[] {0,6}}).contentEquals("qpifxqgwki"));
 		System.out.println("Day14 - ok");
+
+		//Day15
+		assertTrue(arraysEqual(W3D1.productExceptSelf(new int[] {1,2,3,4}),new int[] {24,12,8,6}));
+		assertTrue(arraysEqual(W3D1.productExceptSelf(new int[] {1,2,3,0}),new int[] {0,0,0,6}));
+		assertTrue(arraysEqual(W3D1.productExceptSelf(new int[] {0,2,3,4}),new int[] {24,0,0,0}));
+		assertTrue(arraysEqual(W3D1.productExceptSelf(new int[] {1,0,0,0}),new int[] {0,0,0,0}));
+		System.out.println("Day15 - ok");
+		
+		//Day16
+		assertTrue(W3D2.checkValidString("*)"));
+		assertTrue(W3D2.checkValidString("(*"));
+		assertTrue(W3D2.checkValidString("()"));
+		assertTrue(W3D2.checkValidString("(*)"));
+		assertTrue(W3D2.checkValidString("(*))"));
+		assertTrue(W3D2.checkValidString("()**)"));
+		assertTrue(W3D2.checkValidString("()()"));
+		assertTrue(W3D2.checkValidString("((())())"));
+		assertTrue(W3D2.checkValidString("((()*())"));
+		assertTrue(W3D2.checkValidString("((())*))"));
+		assertTrue(!W3D2.checkValidString("((())()"));
+		assertTrue(!W3D2.checkValidString("(((*)()"));
+		assertTrue(!W3D2.checkValidString("(())((())()()(*)(*()(())())())()()((()())((()))(*"));
+		System.out.println("Day16 - ok");
+		
+		//Day17
+		char[][] ex1 = new char[][] {new char[] {'1','1','1','1','0'},
+			new char[] {'1','1','0','1','0'},
+			new char[] {'1','1','0','0','0'},
+			new char[] {'0','0','0','0','0'}
+		};
+		char[][] ex2 = new char[][] {new char[] {'1','1','0','0','0'},
+			new char[] {'1','1','0','0','0'},
+			new char[] {'0','0','1','0','0'},
+			new char[] {'0','0','0','1','1'}
+		};
+		assertEquals(1, W3D3.numIslands(ex1));
+		assertEquals(3, W3D3.numIslands(ex2));
+		System.out.println("Day17 - ok");
 		
 		System.out.println("All - ok");
+	}
+	
+	private static boolean arraysEqual(int[] a, int[] b) {
+		if(((a == null || b== null) && (a != null || b !=null)) || a.length != b.length)
+			return true;
+		
+		for(int i=0; i< a.length; i++) 
+			if(a[i] != b[i])
+				return false;
+	
+		return true;
 	}
 
 }
